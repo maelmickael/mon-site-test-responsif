@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Chart Js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <img src="assets/logo/logo.png" alt="logo">
+            </div>
+
+            <!-- Nav List-->
+            <ul class="navList" id="navList">
+                <!-- Close Btn-->
+                <div class="close" id="close" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <!-- NavLink-->
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+
+            <!-- Login Btn-->
+            <div class="btn">
+                <form>
+                    <button type="button" class="login">Login</button>
+                    <button type="button" class="signup">SignUp</button>
+                </form>
+            </div>
+
+            <!-- Burger -->
+            <div class="burger" id="burger" onclick="openMenu()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home_selection">
+            <div class="content">
+                <div class="left" id="left">
+                    <h1>Get paid early <br> save automatically <br> all your pay.</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem saepe id libero. Delectus, rerum, sequi at repudiandae est consequatur
+                    </p>
+                    <div class="form">
+                        <form>
+                            <input type="text" placeholder="ex.mael@gmail.com">
+                            <button type="submit">Get Started<span><i class="fa-solid fa-arrow-trend-up"></i></span></button>
+                        </form>
+                    </div>
+                    <div class="marque">
+                        <h4>Klarna.</h4>
+                        <h4>coinbase</h4>
+                        <h4><i class="fa-solid fa-shirt"></i>Instacart</h4>
+                    </div>
+                </div>
+                <div class="right" id="right">
+                    <div class="right_content">
+                        <div class="volatil">
+                            <div class="top">
+                                <p>John Doe</p>
+                                <h4>234 **** ****</h4>
+                            </div>
+                            <div class="bottom">
+                                <h2>visa</h2>
+                                <span><i class="fa-solid fa-volume-high"></i></span>
+                            </div>
+                        </div>
+                        <div class="cart_form">
+                            <div class="first_info">
+                                <div class="awesome">
+                                    <i class="fa-solid fa-crown"></i>
+                                </div>
+                                <div class="text">
+                                    <span>Squarehouse</span> <br>
+                                    <span>squaremail@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="account_info">
+                                <span>John</span>
+                                <h1>$1,876,580</h1>
+                                <span>April 21, 2024</span>
+                            </div>
+                            <div class="banque_form">
+                                <form>
+                                    <div class="rad" id="rad" tabindex="0">
+                                        <button type="button">
+                                        <i class="fa-solid fa-map"></i>
+                                        Credit Cart
+                                    </button>
+                                        <div class="rounded"></div>
+                                    </div>
+                                    <div class="rad" id="rad" tabindex="0">
+                                        <button type="button">
+                                        <i class="fa-solid fa-map"></i>
+                                        Credit Cart
+                                    </button>
+                                        <div class="rounded"></div>
+                                    </div>
+                                    <button type="submit" class="btn">Pay</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section1">
+            <div class="bloc inner hidden">
+                <div class="haut">
+                    <div class="gauche">
+                        <span>Fetch_sentence</span>
+                        <h1 class="display-5 fw-bold">Experience that grows with your scale.</h1>
+                    </div>
+                    <div class="droite">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit architecto, fugiat esse similique nisi inventore. Sint non nulla provident, natus, perferendis dolorum consequuntur itaque temporibus minus, neque asperiores impedit
+                            at?
+                        </p>
+                    </div>
+                </div>
+                <div class="bas">
+                    <div class="row">
+                        <div class="col">
+                            <span><i class="fa-solid fa-audio-description"></i></span>
+                            <h1 class="display-6">Free transform</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus asperiores dolores, accusantium optio assumenda sunt,
+                            </p>
+                        </div>
+                        <div class="col">
+                            <span><i class="fa-solid fa-audio-description"></i></span>
+                            <h1 class="display-6">Free transform</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus asperiores dolores, accusantium optio assumenda sunt,
+                            </p>
+                        </div>
+                        <div class="col col3">
+                            <span><i class="fa-solid fa-audio-description"></i></span>
+                            <h1 class="display-6">Free transform</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus asperiores dolores, accusantium optio assumenda sunt,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class=" inner_sections2">
+                <div class="texte hidden">
+                    <span>About Us</span>
+                    <h2>Why they prefer Finpay</h2>
+                </div>
+                <div class="gridd">
+                    <div class="blocs bloc1 hidden">
+                        <h1 class="display-3 fw-bold">3K+</h1>
+                        <p>Businesses already running <br> on Finpay</p>
+                    </div>
+                    <div class="blocs bloc2 hidden">
+                        <p>Instant Withdraw your funds <br> at any time</p>
+                        <div class="elements">
+                            <span>
+                                <i class="fa-solid fa-dove"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="blocs bloc3 hidden">
+                        <div class="text">
+                            <h3>No asset volatility</h3>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eius quasi nisi consequatur, incidunt nulla reiciendis officiis quos aperiam eligendi esse saepe illo laudantium doloremque ad,
+                            </span>
+                        </div>
+                        <div class="graphics">
+                            <div class="graphs">
+                                <div class="gtext_info">
+                                    <span>Summury</span>
+                                    <h3>$1,876,580</h3>
+                                </div>
+                                <div class="gtext_info">
+                                    <span>Fondation <i class="fa-solid fa-repeat"></i></span>
+                                </div>
+                            </div>
+                            <div class="graph">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="iner_section3 hidden">
+                <div class="texte">
+                    <span>texte</span>
+                    <h1>Maximize your returns with a <br> Reserve account that generates.</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="inner_col">
+                            <h1 class="gradient-text">1</h1>
+                            <span>Open your Account</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos porro ducimus necessitatibus iste.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inner_col">
+                            <h1 class="gradient-text">2</h1>
+                            <span>Open your Account</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos porro ducimus necessitatibus iste.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inner_col">
+                            <h1 class="gradient-text">3</h1>
+                            <span>Open your Account</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos porro ducimus necessitatibus iste.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="inner_section4">
+                <div class="textes">
+                    <span class="hidden">decompression</span>
+                    <h1 class="hidden">We've helped <br> innovative companies</h1>
+                    <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iusto labore fugiat, numquam aliquam dolorum vero delectus</p>
+                </div>
+                <div class="counter hidden">
+                    <div class="meme percent">
+                        <p><span id="counter" data-target="24">24</span>%</p>
+                        <p>payement express</p>
+                    </div>
+                    <div class="meme kilo">
+                        <p><span id="kilo" data-target="180">180</span>K</p>
+                        <p>Individual ressource</p>
+                    </div>
+                    <div class="meme plus">
+                        <p><span id="plus" data-target="10">10</span>+</p>
+                        <p>Months of property</p>
+                    </div>
+                </div>
+                <p class="dlinkk hidden">D-link plus</p>
+                <div class="cartee">
+                    <div class="carte_plus plus hidden">
+                        <h3>Plus</h3>
+                        <div class="plus_bas">
+                            <span>$2.99/month</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="carte_plus premium hidden">
+                        <h3>Plus</h3>
+                        <div class="plus_bas prum">
+                            <span>$2.99/month</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section5">
+            <div class="inner_section5 hidden">
+                <div class="textes">
+                    <span class="deca">Decathlon</span>
+                    <h1>Ready to level up your <br> payment process?</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Modi, reprehenderit voluptatem inventore excepturi sit <br> ex itaque eaque natus eos
+                    </p>
+                </div>
+                <div class="buton">
+                    <a href="#">Get Instead Now</a>
+                    <a href="#">Learn Plus<span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="fot_haut">
+                <div class="logo">
+                    <img src="assets/logo/logo.png" alt="logo">
+                </div>
+                <div class="deroulant">
+                    <ul class="first_ul">
+                        <li class="first_li">
+                            <a href="#">Products</a>
+                            <ul>
+                                <li class="cnd"><a href="#">pantalon</a></li>
+                                <li class="cnd"><a href="#">Chaussure</a></li>
+                                <li class="cnd"><a href="#">PullOver</a></li>
+                                <li><a href="#">Casquette</a></li>
+                            </ul>
+                        </li>
+                        <li class="first_li">
+                            <a href="#">Products</a>
+                            <ul>
+                                <li><a href="#">pantalon</a></li>
+                                <li><a href="#">Chaussure</a></li>
+                                <li><a href="#">PullOver</a></li>
+                                <li><a href="#">Casquette</a></li>
+                            </ul>
+                        </li>
+                        <li class="first_li">
+                            <a href="#">Products</a>
+                            <ul>
+                                <li><a href="#">pantalon</a></li>
+                                <li><a href="#">Chaussure</a></li>
+                                <li><a href="#">PullOver</a></li>
+                                <li><a href="#">Casquette</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="media">
+                    <span>snolygroup</span>
+                    <div class="social">
+                        <a href="#"><i class="fa-solid fa-dove"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="fot_bas">
+                <span>c@pyright 2025 test web</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Script Font Awesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+    <!-- Graph Script -->
+    <script src="graph.js"></script>
+
+    <!-- Anim Script -->
+    <script src="anim.js"></script>
+</body>
+
+</html>
