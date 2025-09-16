@@ -86,7 +86,7 @@ body {
             .close {
                 display: none;
             }
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1080px) {
                 //overflow: visible;
                 .navList {
                     display: block;
@@ -1087,222 +1087,9 @@ body {
     }
 }
 
-//@media screen and (max-width: 992px) {}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    body {
-        main {
-            .home_selection {
-                .content {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    //border: 1px solid red;
-                    .left {
-                        //border: 1px solid green;
-                        h1 {
-                            font-size: 3.2rem;
-                            //border: 1px solid yellowgreen;
-                        }
-                        p {
-                            //border: 1px solid salmon;
-                            width: auto;
-                            font-size: 1.1rem;
-                        }
-                        .form {
-                            width: auto;
-                            form {
-                                input {
-                                    padding: 0.9rem 1.5rem;
-                                    font-size: 1rem;
-                                    //background-color: red;
-                                }
-                                button {
-                                    font-size: 1rem;
-                                    padding: 0.9rem 1.5rem;
-                                }
-                            }
-                        }
-                        .marque {
-                            justify-content: space-between;
-                            h4 {
-                                font-size: 2rem;
-                                margin-right: 0;
-                            }
-                        }
-                    }
-                    .right {
-                        display: none;
-                    }
-                }
-            }
-            .section1 {
-                .inner {
-                    .haut {
-                        gap: 2rem;
-                        .gauche {
-                            span {
-                                font-size: 1rem;
-                            }
-                            h1 {
-                                font-size: 1.25rem;
-                            }
-                        }
-                        .droite {
-                            p {
-                                font-size: 0.5rem;
-                            }
-                        }
-                    }
-                    .bas {
-                        .row {
-                            grid-template-columns: repeat(2, 1fr);
-                            .col {
-                                &.col3 {
-                                    grid-column: 1/3;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .section2 {
-                .inner_sections2 {
-                    .gridd {
-                        .blocs {
-                            &.bloc1 {
-                                p {
-                                    font-size: 1.19rem;
-                                }
-                            }
-                            &.bloc2 {
-                                p {
-                                    font-size: 1.19rem;
-                                }
-                                .elements {
-                                    span:first-child {
-                                        font-size: 1.5rem;
-                                    }
-                                    span:last-child {
-                                        font-size: 1.5rem;
-                                    }
-                                }
-                            }
-                            &.bloc3 {
-                                .text {
-                                    width: 25vw;
-                                    h3 {
-                                        font-size: 0.9rem;
-                                    }
-                                    span {
-                                        font-size: 0.5rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .section3 {
-                .iner_section3 {
-                    .texte {
-                        h1 {
-                            font-size: 1.8rem;
-                        }
-                    }
-                    .row {
-                        .col {
-                            .inner_col {
-                                .gradient-text {
-                                    font-size: 3rem;
-                                }
-                                span {
-                                    font-size: 0.9rem;
-                                    font-weight: bold;
-                                }
-                                p {
-                                    font-size: 0.8rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .section4 {
-                .inner_section4 {
-                    .textes {
-                        width: 25rem;
-                        //border: 1px solid blue;
-                        span {
-                            font-size: 0.8rem;
-                        }
-                        h1 {
-                            font-size: 1.2rem;
-                            //border: 1px solid blue;
-                        }
-                        p {
-                            font-size: 0.7rem;
-                        }
-                    }
-                    .counter {
-                        .meme {
-                            p {
-                                &:first-child {
-                                    font-size: 2.5rem;
-                                }
-                                &:last-child {
-                                    font-size: 0.6rem;
-                                    margin-top: 0.3rem;
-                                }
-                            }
-                        }
-                    }
-                    .cartee {
-                        gap: 1rem;
-                        .carte_plus {
-                            width: 15rem;
-                            h3 {
-                                font-size: 1rem;
-                            }
-                            .plus_bas {
-                                margin-top: 3.8rem;
-                            }
-                        }
-                    }
-                }
-            }
-            .section5 {
-                .inner_section5 {
-                    .textes {
-                        span {
-                            font-size: 0.8rem;
-                        }
-                        h1 {
-                            font-size: 1.2rem;
-                        }
-                        p {
-                            font-size: 0.5rem;
-                        }
-                    }
-                    .buton {
-                        a {
-                            font-size: 0.8rem;
-                        }
-                    }
-                }
-            }
-        }
-        footer {
-            .fot_haut {
-                .deroulant {
-                    font-size: 0.8rem;
-                }
-            }
-        }
-    }
-}
+@media screen and (max-width: 992px) {}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     body {
         main {
             .home_selection {
@@ -1915,4 +1702,395 @@ body {
     }
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+    body {
+        main {
+            .home_selection {
+                min-height: auto;
+                .content {
+                    margin-top: 7rem;
+                    height: auto;
+                    //overflow: visible;
+                    //border: 1px solid red;
+                    .left {
+                        //border: 1px solid green;
+                        width: 100%;
+                        h1 {
+                            font-size: 1.7rem;
+                            //border: 1px solid yellowgreen;
+                        }
+                        p {
+                            //border: 1px solid salmon;
+                            font-size: 0.8rem;
+                        }
+                        .form {
+                            width: 100%;
+                            form {
+                                input {
+                                    padding: 0.7rem 1rem;
+                                    font-size: 0.7rem;
+                                    //background-color: red;
+                                }
+                                button {
+                                    font-size: 0.7rem;
+                                    padding: 0.7rem;
+                                }
+                            }
+                        }
+                        .marque {
+                            justify-content: space-between;
+                            h4 {
+                                font-size: 1rem;
+                                //margin-right: 0;
+                            }
+                        }
+                    }
+                    .right {
+                        display: none;
+                    }
+                }
+            }
+            .section1 {
+                overflow: visible;
+                .inner {
+                    .haut {
+                        text-align: center;
+                        //gap: 2rem;
+                        grid-template-columns: auto;
+                        .gauche {
+                            span {
+                                font-size: 0.8rem;
+                            }
+                            h1 {
+                                font-size: 1rem;
+                            }
+                        }
+                        .droite {
+                            p {
+                                font-size: 0.6rem;
+                                margin-top: -1.2rem;
+                            }
+                        }
+                    }
+                    .bas {
+                        text-align: center;
+                        margin-top: 1rem;
+                        .row {
+                            grid-template-columns: repeat(2, 1fr);
+                            .col {
+                                span {
+                                    font-size: 2.5rem;
+                                }
+                                h1 {
+                                    font-size: 1.5rem;
+                                }
+                                p {
+                                    font-size: 0.7rem;
+                                }
+                                &.col1 {
+                                    grid-column: 1/3;
+                                }
+                                &.col2 {
+                                    grid-column: 1/3;
+                                }
+                                &.col3 {
+                                    grid-column: 1/3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section2 {
+                //overflow: visible;
+                flex-wrap: wrap;
+                //width: 100%;
+                //padding: 0 10%;
+                .inner_sections2 {
+                    width: 100%;
+                    .texte {
+                        text-align: center;
+                        span {
+                            color: #3760b09a;
+                        }
+                        h2 {
+                            font-size: 1.2rem;
+                        }
+                        &.hidden {
+                            opacity: 0;
+                            transform: translateY(50px);
+                            transition: 800ms ease;
+                        }
+                        &.anim_inner_section {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                    .gridd {
+                        width: 100%;
+                        margin-top: 2rem;
+                        //grid-template-columns: auto;
+                        text-align: center;
+                        .blocs {
+                            //padding: 5rem;
+                            &.bloc1 {
+                                grid-column: 1/3;
+                                p {
+                                    font-size: 1rem;
+                                }
+                                &.hidden {
+                                    opacity: 0;
+                                    transform: translateY(0);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateY(0);
+                                }
+                            }
+                            &.bloc2 {
+                                grid-column: 1/3;
+                                p {
+                                    font-size: 1rem;
+                                }
+                                &.hidden {
+                                    opacity: 0;
+                                    transform: translateY(0);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateY(0);
+                                }
+                                .elements {
+                                    span:first-child {
+                                        padding: 0.3rem;
+                                        border-radius: 0.4rem;
+                                        font-size: 1rem;
+                                    }
+                                    span:last-child {
+                                        padding: 0.3rem;
+                                        border-radius: 0.4rem;
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                            &.bloc3 {
+                                padding: 1rem 2rem;
+                                grid-column: 1/3;
+                                flex-direction: column;
+                                &.hidden {
+                                    opacity: 0;
+                                    transform: translateY(50px);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateY(0);
+                                }
+                                .text {
+                                    width: 100%;
+                                    h3 {
+                                        font-size: 1.2rem;
+                                    }
+                                    span {
+                                        font-size: 0.6rem;
+                                    }
+                                }
+                                .graphics {
+                                    width: 100%;
+                                    margin-top: 1rem;
+                                    .graphs {
+                                        .gtext_info {
+                                            span {
+                                                font-size: 0.7rem;
+                                            }
+                                            h3 {
+                                                font-size: 0.8rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section3 {
+                overflow: visible;
+                .iner_section3 {
+                    text-align: center;
+                    .texte {
+                        h1 {
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .row {
+                        grid-template-columns: auto;
+                        .col {
+                            .inner_col {
+                                .gradient-text {
+                                    font-size: 3rem;
+                                }
+                                span {
+                                    font-size: 0.9rem;
+                                    font-weight: bold;
+                                }
+                                p {
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section4 {
+                overflow: visible;
+                .inner_section4 {
+                    .textes {
+                        width: 100%;
+                        //border: 1px solid blue;
+                        span {
+                            font-size: 0.8rem;
+                        }
+                        h1 {
+                            font-size: 1.2rem;
+                            //border: 1px solid blue;
+                        }
+                        p {
+                            font-size: 0.7rem;
+                        }
+                    }
+                    .counter {
+                        .meme {
+                            p {
+                                &:first-child {
+                                    font-size: 2.5rem;
+                                }
+                                &:last-child {
+                                    font-size: 0.6rem;
+                                    margin-top: 0.3rem;
+                                }
+                            }
+                        }
+                    }
+                    .cartee {
+                        gap: 1rem;
+                        flex-direction: column;
+                        .carte_plus {
+                            width: 100%;
+                            padding: 1.5rem;
+                            &.plus {
+                                &.hidden {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                            }
+                            h3 {
+                                font-size: 1rem;
+                            }
+                            .plus_bas {
+                                margin-top: 3.8rem;
+                            }
+                            &.premium {
+                                background-image: url("assets/image/premium.jpg");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                &.hidden {
+                                    opacity: 0;
+                                    transform: translateX(500px);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section5 {
+                margin-top: 5rem;
+                //overflow: visible;
+                //width: 100%;
+                .inner_section5 {
+                    flex-direction: column;
+                    text-align: center;
+                    overflow: visible;
+                    .textes {
+                        width: 100%;
+                        span {
+                            font-size: 0.8rem;
+                        }
+                        h1 {
+                            font-size: 1.2rem;
+                        }
+                        p {
+                            font-size: 0.5rem;
+                        }
+                    }
+                    .buton {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 2rem;
+                        a {
+                            font-size: 0.8rem;
+                            padding: 1rem;
+                            &:first-child {
+                                background-color: #03a1c8;
+                                padding: 0.6rem 1rem;
+                                border-radius: 0.5rem;
+                                margin-bottom: 0.5rem;
+                                border: 0.1rem solid #03a1c8;
+                            }
+                            &:last-child {
+                                //background-color: #03a1c8;
+                                border: 1px solid #03a1c8;
+                                padding: 0.6rem 1rem;
+                                border-radius: 0.5rem;
+                                margin-bottom: 0.5rem;
+                                border: 0.1rem solid #03a1c8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            overflow: visible;
+            //width: 100%;
+            .fot_haut {
+                overflow: visible;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .logo {
+                    width: 50%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .deroulant {
+                    font-size: 0.8rem;
+                    margin-top: 1rem;
+                }
+                .media {
+                    margin-top: 1rem;
+                }
+            }
+            .fot_bas {
+                text-align: center;
+                padding: 1rem;
+                color: gray;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
