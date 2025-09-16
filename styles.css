@@ -85,13 +85,7 @@ body header .navbar .burger {
 body header .navbar .close {
   display: none;
 }
-@media screen and (max-width: 1080px) {
-  body header .navbar .logo {
-    width: 20%;
-  }
-  body header .navbar .logo img {
-    width: 100%;
-  }
+@media screen and (max-width: 992px) {
   body header .navbar .navList {
     display: block;
     position: fixed;
@@ -822,7 +816,7 @@ body footer .fot_bas {
   color: gray;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1400px) {
   body main .home_selection .content .left h1 {
     font-size: 3rem;
   }
@@ -861,7 +855,7 @@ body footer .fot_bas {
     font-size: 2.3rem;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   body main .home_selection .content .left h1 {
     font-size: 2.6rem;
   }
@@ -944,7 +938,7 @@ body footer .fot_bas {
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   body main .home_selection .content {
     display: flex;
     flex-direction: column;
@@ -1078,7 +1072,141 @@ body footer .fot_bas {
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 767px) {
+  body main .home_selection .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .home_selection .content .left h1 {
+    font-size: 3.2rem;
+  }
+  body main .home_selection .content .left p {
+    width: auto;
+    font-size: 1.1rem;
+  }
+  body main .home_selection .content .left .form {
+    width: auto;
+  }
+  body main .home_selection .content .left .form form input {
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+  body main .home_selection .content .left .form form button {
+    font-size: 1rem;
+    padding: 0.9rem 1.5rem;
+  }
+  body main .home_selection .content .left .marque {
+    justify-content: space-between;
+  }
+  body main .home_selection .content .left .marque h4 {
+    font-size: 2rem;
+    margin-right: 0;
+  }
+  body main .home_selection .content .right {
+    display: none;
+  }
+  body main .section1 .inner .haut {
+    gap: 2rem;
+  }
+  body main .section1 .inner .haut .gauche span {
+    font-size: 1rem;
+  }
+  body main .section1 .inner .haut .gauche h1 {
+    font-size: 1.25rem;
+  }
+  body main .section1 .inner .haut .droite p {
+    font-size: 0.5rem;
+  }
+  body main .section1 .inner .bas .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body main .section1 .inner .bas .row .col.col3 {
+    grid-column: 1/3;
+  }
+  body main .section2 .inner_sections2 .gridd .blocs.bloc1 p {
+    font-size: 1.19rem;
+  }
+  body main .section2 .inner_sections2 .gridd .blocs.bloc2 p {
+    font-size: 1.19rem;
+  }
+  body main .section2 .inner_sections2 .gridd .blocs.bloc2 .elements span:first-child {
+    font-size: 1.5rem;
+  }
+  body main .section2 .inner_sections2 .gridd .blocs.bloc2 .elements span:last-child {
+    font-size: 1.5rem;
+  }
+  body main .section2 .inner_sections2 .gridd .blocs.bloc3 .text {
+    width: 25vw;
+  }
+  body main .section2 .inner_sections2 .gridd .blocs.bloc3 .text h3 {
+    font-size: 0.9rem;
+  }
+  body main .section2 .inner_sections2 .gridd .blocs.bloc3 .text span {
+    font-size: 0.5rem;
+  }
+  body main .section3 .iner_section3 .texte h1 {
+    font-size: 1.8rem;
+  }
+  body main .section3 .iner_section3 .row .col .inner_col .gradient-text {
+    font-size: 3rem;
+  }
+  body main .section3 .iner_section3 .row .col .inner_col span {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  body main .section3 .iner_section3 .row .col .inner_col p {
+    font-size: 0.8rem;
+  }
+  body main .section4 .inner_section4 .textes {
+    width: 25rem;
+  }
+  body main .section4 .inner_section4 .textes span {
+    font-size: 0.8rem;
+  }
+  body main .section4 .inner_section4 .textes h1 {
+    font-size: 1.2rem;
+  }
+  body main .section4 .inner_section4 .textes p {
+    font-size: 0.7rem;
+  }
+  body main .section4 .inner_section4 .counter .meme p:first-child {
+    font-size: 2.5rem;
+  }
+  body main .section4 .inner_section4 .counter .meme p:last-child {
+    font-size: 0.6rem;
+    margin-top: 0.3rem;
+  }
+  body main .section4 .inner_section4 .cartee {
+    gap: 1rem;
+  }
+  body main .section4 .inner_section4 .cartee .carte_plus {
+    width: 15rem;
+  }
+  body main .section4 .inner_section4 .cartee .carte_plus h3 {
+    font-size: 1rem;
+  }
+  body main .section4 .inner_section4 .cartee .carte_plus .plus_bas {
+    margin-top: 3.8rem;
+  }
+  body main .section5 .inner_section5 .textes span {
+    font-size: 0.8rem;
+  }
+  body main .section5 .inner_section5 .textes h1 {
+    font-size: 1.2rem;
+  }
+  body main .section5 .inner_section5 .textes p {
+    font-size: 0.5rem;
+  }
+  body main .section5 .inner_section5 .buton a {
+    font-size: 0.8rem;
+  }
+  body footer .fot_haut .deroulant {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
   body main .home_selection .content {
     width: auto;
     display: flex;
