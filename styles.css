@@ -1515,8 +1515,8 @@ body footer .fot_bas {
     font-size: 1.2rem;
   }
   body main .section2 .inner_sections2 .texte.hidden {
-    opacity: 0;
-    transform: translateY(50px);
+    opacity: 1;
+    transform: translateY(0);
     transition: 800ms ease;
   }
   body main .section2 .inner_sections2 .texte.anim_inner_section {
@@ -1535,7 +1535,7 @@ body footer .fot_bas {
     font-size: 1rem;
   }
   body main .section2 .inner_sections2 .gridd .blocs.bloc1.hidden {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(0);
     transition: 800ms ease;
   }
@@ -1550,7 +1550,7 @@ body footer .fot_bas {
     font-size: 1rem;
   }
   body main .section2 .inner_sections2 .gridd .blocs.bloc2.hidden {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(0);
     transition: 800ms ease;
   }
@@ -1574,8 +1574,8 @@ body footer .fot_bas {
     flex-direction: column;
   }
   body main .section2 .inner_sections2 .gridd .blocs.bloc3.hidden {
-    opacity: 0;
-    transform: translateY(50px);
+    opacity: 1;
+    transform: translateY(0);
     transition: 800ms ease;
   }
   body main .section2 .inner_sections2 .gridd .blocs.bloc3.anim_inner_section {
@@ -1601,11 +1601,17 @@ body footer .fot_bas {
   body main .section2 .inner_sections2 .gridd .blocs.bloc3 .graphics .graphs .gtext_info h3 {
     font-size: 0.8rem;
   }
-  body main .section3 {
-    overflow: visible;
-  }
   body main .section3 .iner_section3 {
     text-align: center;
+  }
+  body main .section3 .iner_section3.hidden {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 800ms ease;
+  }
+  body main .section3 .iner_section3.anim_inner_section {
+    opacity: 1;
+    transform: translate(0);
   }
   body main .section3 .iner_section3 .texte h1 {
     font-size: 1.2rem;
@@ -1632,11 +1638,47 @@ body footer .fot_bas {
   body main .section4 .inner_section4 .textes span {
     font-size: 0.8rem;
   }
+  body main .section4 .inner_section4 .textes span.hidden {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 800ms ease;
+  }
+  body main .section4 .inner_section4 .textes span.anim_inner_section {
+    opacity: 1;
+    transform: translateY(0);
+  }
   body main .section4 .inner_section4 .textes h1 {
     font-size: 1.2rem;
   }
+  body main .section4 .inner_section4 .textes h1.hidden {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 800ms ease;
+  }
+  body main .section4 .inner_section4 .textes h1.anim_inner_section {
+    opacity: 1;
+    transform: translateY(0);
+  }
   body main .section4 .inner_section4 .textes p {
     font-size: 0.7rem;
+  }
+  body main .section4 .inner_section4 .textes p.hidden {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 800ms ease;
+  }
+  body main .section4 .inner_section4 .textes p.anim_inner_section {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  body main .section4 .inner_section4 .counter.hidden {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 800ms ease;
+  }
+  body main .section4 .inner_section4 .counter.anim_inner_section {
+    opacity: 1;
+    transform: translateX(0);
   }
   body main .section4 .inner_section4 .counter .meme p:first-child {
     font-size: 2.5rem;
@@ -1644,6 +1686,15 @@ body footer .fot_bas {
   body main .section4 .inner_section4 .counter .meme p:last-child {
     font-size: 0.6rem;
     margin-top: 0.3rem;
+  }
+  body main .section4 .inner_section4 .dlinkk.hidden {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 800ms ease;
+  }
+  body main .section4 .inner_section4 .dlinkk.anim_inner_section {
+    opacity: 1;
+    transform: translateY(0);
   }
   body main .section4 .inner_section4 .cartee {
     gap: 1rem;
@@ -1675,8 +1726,8 @@ body footer .fot_bas {
     background-position: center;
   }
   body main .section4 .inner_section4 .cartee .carte_plus.premium.hidden {
-    opacity: 0;
-    transform: translateX(500px);
+    opacity: 1;
+    transform: translateX(0);
     transition: 800ms ease;
   }
   body main .section4 .inner_section4 .cartee .carte_plus.premium.anim_inner_section {
@@ -1690,6 +1741,15 @@ body footer .fot_bas {
     flex-direction: column;
     text-align: center;
     overflow: visible;
+  }
+  body main .section5 .inner_section5.hidden {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 800ms ease;
+  }
+  body main .section5 .inner_section5.anim_inner_section {
+    opacity: 1;
+    transform: translate(0);
   }
   body main .section5 .inner_section5 .textes {
     width: 100%;
