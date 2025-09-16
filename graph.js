@@ -15,6 +15,7 @@ new Chart(ctx, {
             label: 'Ventes',
             data: [200000, 450000, 700000, 950000, 1400000, 1876580], // Données
             borderColor: '#3259a6', // couleur de la ligne
+            //fontSize: '5px',
             backgroundColor: gradient, // remplissage sous la courbe
             fill: true, // active le dégradé
             tension: 0.3, // arrondit la courbe

@@ -681,20 +681,20 @@ body {
                             display: flex;
                             justify-content: space-between;
                         }
-                    }
-                    .premium {
-                        background-image: url("assets/image/premium.jpg");
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center;
-                        &.hidden {
-                            opacity: 0;
-                            transform: translateX(500px);
-                            transition: 800ms ease;
-                        }
-                        &.anim_inner_section {
-                            opacity: 1;
-                            transform: translateX(0);
+                        &.premium {
+                            background-image: url("assets/image/premium.jpg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            &.hidden {
+                                opacity: 0;
+                                transform: translateX(500px);
+                                transition: 800ms ease;
+                            }
+                            &.anim_inner_section {
+                                opacity: 1;
+                                transform: translateX(0);
+                            }
                         }
                     }
                 }

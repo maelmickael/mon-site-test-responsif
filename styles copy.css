@@ -661,18 +661,18 @@ body main .section4 .inner_section4 .cartee .carte_plus .plus_bas {
   display: flex;
   justify-content: space-between;
 }
-body main .section4 .inner_section4 .cartee .premium {
+body main .section4 .inner_section4 .cartee .carte_plus.premium {
   background-image: url("assets/image/premium.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-body main .section4 .inner_section4 .cartee .premium.hidden {
+body main .section4 .inner_section4 .cartee .carte_plus.premium.hidden {
   opacity: 0;
   transform: translateX(500px);
   transition: 800ms ease;
 }
-body main .section4 .inner_section4 .cartee .premium.anim_inner_section {
+body main .section4 .inner_section4 .cartee .carte_plus.premium.anim_inner_section {
   opacity: 1;
   transform: translateX(0);
 }
