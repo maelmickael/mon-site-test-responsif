@@ -147,6 +147,7 @@ body {
                 justify-content: space-between;
                 padding: 0 10%;
                 padding-top: 3vw;
+                gap: 2rem;
                 //margin-top: 3vw;
                 //border: 1px solid red;
                 overflow: hidden;
@@ -949,8 +950,10 @@ body {
                         }
                         p {
                             font-size: 0.8rem;
+                            width: 100%;
                         }
                         .form {
+                            width: 100%;
                             form {
                                 margin-top: 1.2rem;
                                 input {
@@ -968,9 +971,10 @@ body {
                         }
                         .marque {
                             margin-top: 1.2rem;
+                            justify-content: space-between;
                             h4 {
-                                margin-right: 1.5rem;
-                                font-size: 1.3rem;
+                                margin-right: 0;
+                                font-size: 1.5rem;
                             }
                         }
                     }
@@ -1032,15 +1036,38 @@ body {
                 }
             }
             .section2 {
+                //overflow: visible;
                 .inner_sections2 {
                     .gridd {
-                        .bloc2 {
-                            .elements {
-                                span:first-child {
-                                    font-size: 1.5rem;
+                        .blocs {
+                            &.bloc1 {
+                                &.hidden {
+                                    opacity: 0;
+                                    transform: translateX(-100px);
+                                    transition: 800ms ease;
                                 }
-                                span:last-child {
-                                    font-size: 1.5rem;
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                            }
+                            &.bloc2 {
+                                &.hidden {
+                                    opacity: 0;
+                                    transform: translateX(100px);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                                .elements {
+                                    span:first-child {
+                                        font-size: 1.5rem;
+                                    }
+                                    span:last-child {
+                                        font-size: 1.5rem;
+                                    }
                                 }
                             }
                         }
@@ -1062,6 +1089,7 @@ body {
                 }
             }
             .section4 {
+                //overflow: visible;
                 .inner_section4 {
                     .textes {
                         p {
@@ -1074,7 +1102,7 @@ body {
                 .inner_section5 {
                     .textes {
                         h1 {
-                            font-size: 2.1rem;
+                            font-size: 2rem;
                         }
                         p {
                             font-size: 0.8rem;
@@ -1091,14 +1119,21 @@ body {
         main {
             .home_selection {
                 .content {
+                    padding: 0 5%;
+                    margin-top: 2.5rem;
+                    //border: 1px solid green;
                     .left {
+                        //border: 1px solid red;
+                        //width: 60%;
                         h1 {
-                            font-size: 2.6rem;
+                            font-size: 2.2rem;
                         }
                         p {
                             font-size: 0.8rem;
+                            width: 100%;
                         }
                         .form {
+                            width: 100%;
                             form {
                                 margin-top: 1.2rem;
                                 input {
@@ -1116,30 +1151,33 @@ body {
                         }
                         .marque {
                             margin-top: 1.2rem;
+                            justify-content: space-between;
                             h4 {
-                                margin-right: 1.5rem;
                                 font-size: 1.3rem;
+                                margin: 0;
                             }
                         }
                     }
                     .right {
                         .right_content {
                             .volatil {
+                                width: 8rem;
                                 .top {
+                                    margin-bottom: 3rem;
                                     p {
-                                        font-size: 0.8rem;
+                                        font-size: 0.7rem;
                                     }
                                     h4 {
-                                        font-size: 1.2rem;
+                                        font-size: 1rem;
                                     }
                                 }
                                 .bottom {
                                     padding: 0.8rem 1.5rem;
                                     h2 {
-                                        font-size: 1.4rem;
+                                        font-size: 1.2rem;
                                     }
                                     span {
-                                        font-size: 1rem;
+                                        font-size: 0.9rem;
                                     }
                                 }
                             }
@@ -1155,14 +1193,14 @@ body {
                     .haut {
                         .gauche {
                             span {
-                                font-size: 1.20rem;
+                                font-size: 1rem;
                             }
                             h1 {
-                                font-size: 2.2rem;
+                                font-size: 1.8rem;
                             }
                         }
                         .droite {
-                            font-size: 0.9rem;
+                            font-size: 0.7rem;
                         }
                     }
                     .bas {
@@ -1172,7 +1210,7 @@ body {
                                     font-size: 1.4rem;
                                 }
                                 p {
-                                    font-size: 0.8rem;
+                                    font-size: 0.7rem;
                                 }
                             }
                         }
@@ -1182,19 +1220,52 @@ body {
             .section2 {
                 .inner_sections2 {
                     .gridd {
-                        .bloc2 {
-                            .elements {
-                                span:first-child {
-                                    font-size: 1.5rem;
+                        .blocs {
+                            &.bloc1 {
+                                height: 10rem;
+                                &.hidden {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                    transition: 800ms ease;
                                 }
-                                span:last-child {
-                                    font-size: 1.5rem;
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
                                 }
                             }
-                        }
-                        .bloc3 {
-                            .text {
-                                width: 25vw;
+                            &.bloc2 {
+                                height: 10rem;
+                                &.hidden {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                                .elements {
+                                    span:first-child {
+                                        font-size: 1.5rem;
+                                    }
+                                    span:last-child {
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                            }
+                            &.bloc3 {
+                                &.hidden {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                                .text {
+                                    width: 25vw;
+                                }
                             }
                         }
                     }
@@ -1204,7 +1275,16 @@ body {
                 .iner_section3 {
                     .texte {
                         h1 {
-                            font-size: 2.4rem;
+                            font-size: 2rem;
+                        }
+                    }
+                    .row {
+                        .col {
+                            .inner_col {
+                                p {
+                                    font-size: 0.8rem;
+                                }
+                            }
                         }
                     }
                 }
@@ -1212,8 +1292,54 @@ body {
             .section4 {
                 .inner_section4 {
                     .textes {
+                        width: 100%;
                         p {
-                            font-size: 0.7rem;
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .counter {
+                        .meme {
+                            p:last-child {
+                                margin-top: 0.5rem;
+                            }
+                        }
+                    }
+                    .dlinkk {
+                        &.hidden {
+                            opacity: 1;
+                            transform: translateX(0);
+                            transition: 800ms ease;
+                        }
+                        &.anim_inner_section {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }
+                    }
+                    .cartee {
+                        .carte_plus {
+                            width: 18rem;
+                            &.plus {
+                                &.hidden {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                            }
+                            &.premium {
+                                &.hidden {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                            }
                         }
                     }
                 }
@@ -1222,10 +1348,10 @@ body {
                 .inner_section5 {
                     .textes {
                         h1 {
-                            font-size: 2.1rem;
+                            font-size: 1.6rem;
                         }
                         p {
-                            font-size: 0.8rem;
+                            font-size: 0.7rem;
                         }
                     }
                 }
@@ -1445,7 +1571,7 @@ body {
                     .counter {
                         &.hidden {
                             opacity: 1;
-                            transform: translateX();
+                            transform: translateX(0);
                             transition: 800ms ease;
                         }
                         &.anim_inner_section {
@@ -1546,9 +1672,7 @@ body {
     }
 }
 
-@media screen and (max-width: 576px) {}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
     body {
         main {
             .home_selection {
@@ -1557,17 +1681,18 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    margin-top: 1rem;
                     //border: 1px solid red;
                     .left {
                         //border: 1px solid green;
                         h1 {
-                            font-size: 3.2rem;
+                            font-size: 2.8rem;
                             //border: 1px solid yellowgreen;
                         }
                         p {
                             //border: 1px solid salmon;
-                            width: auto;
-                            font-size: 1.1rem;
+                            width: 100%;
+                            font-size: 1rem;
                         }
                         .form {
                             width: auto;
@@ -1586,7 +1711,7 @@ body {
                         .marque {
                             justify-content: space-between;
                             h4 {
-                                font-size: 2rem;
+                                font-size: 1.7rem;
                                 margin-right: 0;
                             }
                         }
@@ -1598,6 +1723,387 @@ body {
             }
             .section1 {
                 .inner {
+                    text-align: center;
+                    .haut {
+                        gap: 2rem;
+                        grid-template-columns: auto;
+                        .gauche {
+                            span {
+                                font-size: 1rem;
+                            }
+                            h1 {
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .droite {
+                            margin-top: -0.8rem;
+                            p {
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                    .bas {
+                        margin-top: 1.5rem;
+                        .row {
+                            grid-template-columns: auto;
+                            .col {
+                                span {
+                                    font-size: 4rem;
+                                    color: #3259a6;
+                                }
+                                h1 {
+                                    font-weight: bold;
+                                    font-size: 1.6rem;
+                                }
+                                p {
+                                    font-size: 1rem;
+                                }
+                                &.col1 {
+                                    grid-column: 1/3;
+                                }
+                                &.col2 {
+                                    grid-column: 1/3;
+                                }
+                                &.col3 {
+                                    grid-column: 1/3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section2 {
+                overflow: visible;
+                .inner_sections2 {
+                    .gridd {
+                        text-align: center;
+                        grid-template-columns: auto;
+                        .blocs {
+                            &.bloc1 {
+                                height: 9rem;
+                                grid-column: 1/3;
+                                p {
+                                    font-size: 1.19rem;
+                                }
+                                &.hidden {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                            }
+                            &.bloc2 {
+                                height: 9rem;
+                                grid-column: 1/3;
+                                p {
+                                    font-size: 1.19rem;
+                                }
+                                &.hidden {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                                .elements {
+                                    span:first-child {
+                                        font-size: 1.5rem;
+                                    }
+                                    span:last-child {
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                            }
+                            &.bloc3 {
+                                flex-direction: column;
+                                &.hidden {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                                .text {
+                                    width: 20rem;
+                                    h3 {
+                                        font-size: 1.5rem;
+                                    }
+                                    span {
+                                        font-size: 0.7rem;
+                                        line-height: 1px;
+                                    }
+                                }
+                                .graphics {
+                                    width: 100%;
+                                    margin-top: 1.5rem;
+                                    .graphs {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        .gtext_info span {
+                                            font-size: 0.75rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section3 {
+                .iner_section3 {
+                    .texte {
+                        text-align: center;
+                        h1 {
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .row {
+                        margin-top: 1.5rem;
+                        text-align: center;
+                        grid-template-columns: auto;
+                        .col {
+                            .inner_col {
+                                .gradient-text {
+                                    font-size: 3rem;
+                                }
+                                span {
+                                    font-size: 0.9rem;
+                                    font-weight: bold;
+                                }
+                                p {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section4 {
+                //overflow: visible;
+                .inner_section4 {
+                    .textes {
+                        width: 25rem;
+                        //border: 1px solid blue;
+                        span {
+                            font-size: 0.8rem;
+                        }
+                        h1 {
+                            font-size: 1.7rem;
+                            //border: 1px solid blue;
+                        }
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                    .counter {
+                        gap: 1rem;
+                        &.hidden {
+                            opacity: 1;
+                            transform: translateX(0);
+                            transition: 800ms ease;
+                        }
+                        &.anim_inner_section {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }
+                        .meme {
+                            p {
+                                &:first-child {
+                                    font-size: 2.5rem;
+                                }
+                                &:last-child {
+                                    font-size: 0.6rem;
+                                    margin-top: 0.3rem;
+                                }
+                            }
+                        }
+                    }
+                    .dlinkk {
+                        &.hidden {
+                            opacity: 1;
+                            transform: translateX(0);
+                            transition: 800ms ease;
+                        }
+                        &.anim_inner_section {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }
+                    }
+                    .cartee {
+                        gap: 1rem;
+                        .carte_plus {
+                            width: 15rem;
+                            h3 {
+                                font-size: 1rem;
+                            }
+                            .plus_bas {
+                                margin-top: 3.8rem;
+                            }
+                            &.plus {
+                                background-color: #3259a64b;
+                                &.hidden {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                    transition: 800ms ease;
+                                }
+                                &.anim_inner_section {
+                                    opacity: 1;
+                                    transform: translateX(0);
+                                }
+                            }
+                            &.premium {
+                                &.plus {
+                                    background-color: #3259a64b;
+                                    &.hidden {
+                                        opacity: 1;
+                                        transform: translateX(0);
+                                        transition: 800ms ease;
+                                    }
+                                    &.anim_inner_section {
+                                        opacity: 1;
+                                        transform: translateX(0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section5 {
+                .inner_section5 {
+                    flex-direction: column;
+                    &.hidden {
+                        opacity: 1;
+                        transform: translateX(0);
+                        transition: 800ms ease;
+                    }
+                    &.anim_inner_section {
+                        opacity: 1;
+                        transform: translate(0);
+                    }
+                    .textes {
+                        width: 100%;
+                        text-align: center;
+                        span {
+                            font-size: 0.8rem;
+                        }
+                        h1 {
+                            font-size: 1.2rem;
+                        }
+                        p {
+                            font-size: 0.5rem;
+                        }
+                    }
+                    .buton {
+                        padding: 1.5rem 0 1rem 0;
+                        a {
+                            font-size: 0.8rem;
+                            &.last-child {
+                                //background-color: #03a1c8;
+                                border: 1px solid #03a1c8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .fot_haut {
+                flex-direction: column;
+                align-items: center;
+                .logo {
+                    width: 30%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .deroulant {
+                    padding: 1.5rem 0;
+                    font-size: 1rem;
+                    .first_ul {
+                        gap: 2rem;
+                        .first_li {
+                            .bold {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+            .fot_bas {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        main {
+            .home_selection {
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    //border: 1px solid red;
+                    .left {
+                        //border: 1px solid green;
+                        h1 {
+                            font-size: 2.6rem;
+                            //border: 1px solid yellowgreen;
+                        }
+                        p {
+                            //border: 1px solid salmon;
+                            width: 100%;
+                            font-size: 1rem;
+                        }
+                        .form {
+                            width: auto;
+                            form {
+                                input {
+                                    padding: 0.9rem 1.5rem;
+                                    font-size: 1rem;
+                                    //background-color: red;
+                                }
+                                button {
+                                    font-size: 1rem;
+                                    padding: 0.9rem 1.5rem;
+                                }
+                            }
+                        }
+                        .marque {
+                            justify-content: space-between;
+                            h4 {
+                                font-size: 1.5rem;
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    .right {
+                        display: none;
+                    }
+                }
+            }
+            .section1 {
+                .inner {
+                    &.hidden {
+                        opacity: 1;
+                        transform: translateX(0);
+                        transition: 800ms ease;
+                    }
+                    &.anim_inner_section {
+                        opacity: 1;
+                        transform: translate(0);
+                    }
                     .haut {
                         gap: 2rem;
                         .gauche {
@@ -1605,12 +2111,12 @@ body {
                                 font-size: 1rem;
                             }
                             h1 {
-                                font-size: 1.25rem;
+                                font-size: 1.5rem;
                             }
                         }
                         .droite {
                             p {
-                                font-size: 0.5rem;
+                                font-size: 0.8rem;
                             }
                         }
                     }
@@ -1628,6 +2134,7 @@ body {
             }
             .section2 {
                 .inner_sections2 {
+                    //width: 100%;
                     .gridd {
                         .blocs {
                             &.bloc1 {
@@ -1665,9 +2172,18 @@ body {
             }
             .section3 {
                 .iner_section3 {
+                    &.hidden {
+                        opacity: 1;
+                        transform: translateX(0);
+                        transition: 800ms ease;
+                    }
+                    &.anim_inner_section {
+                        opacity: 1;
+                        transform: translate(0);
+                    }
                     .texte {
                         h1 {
-                            font-size: 1.8rem;
+                            font-size: 1.5rem;
                         }
                     }
                     .row {
@@ -1681,7 +2197,7 @@ body {
                                     font-weight: bold;
                                 }
                                 p {
-                                    font-size: 0.8rem;
+                                    font-size: 1rem;
                                 }
                             }
                         }
