@@ -1853,7 +1853,7 @@ body footer .fot_bas {
     width: 100%;
   }
   body main .home_selection .content .left h1 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   body main .home_selection .content .left p {
     font-size: 0.8rem;
@@ -1932,9 +1932,6 @@ body footer .fot_bas {
   body main .section2 {
     flex-wrap: wrap;
   }
-  body main .section2 .inner_sections2 {
-    width: 100%;
-  }
   body main .section2 .inner_sections2 .texte {
     text-align: center;
   }
@@ -1954,11 +1951,12 @@ body footer .fot_bas {
     transform: translateY(0);
   }
   body main .section2 .inner_sections2 .gridd {
-    width: 100%;
     margin-top: 2rem;
     text-align: center;
   }
   body main .section2 .inner_sections2 .gridd .blocs.bloc1 {
+    width: 100%;
+    height: auto;
     grid-column: 1/3;
   }
   body main .section2 .inner_sections2 .gridd .blocs.bloc1 p {
@@ -1974,6 +1972,8 @@ body footer .fot_bas {
     transform: translateY(0);
   }
   body main .section2 .inner_sections2 .gridd .blocs.bloc2 {
+    height: auto;
+    width: 100%;
     grid-column: 1/3;
   }
   body main .section2 .inner_sections2 .gridd .blocs.bloc2 p {
@@ -1999,6 +1999,8 @@ body footer .fot_bas {
     font-size: 1rem;
   }
   body main .section2 .inner_sections2 .gridd .blocs.bloc3 {
+    width: 100%;
+    height: auto;
     padding: 1rem 2rem;
     grid-column: 1/3;
     flex-direction: column;
@@ -2111,10 +2113,10 @@ body footer .fot_bas {
     transform: translateX(0);
   }
   body main .section4 .inner_section4 .counter .meme p:first-child {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   body main .section4 .inner_section4 .counter .meme p:last-child {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     margin-top: 0.3rem;
   }
   body main .section4 .inner_section4 .dlinkk.hidden {
