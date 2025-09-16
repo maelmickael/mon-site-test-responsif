@@ -1072,7 +1072,7 @@ body footer .fot_bas {
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 395px) {
   body main .home_selection .content {
     width: auto;
     display: flex;
