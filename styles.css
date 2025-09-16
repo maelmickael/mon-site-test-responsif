@@ -1417,6 +1417,7 @@ body footer .fot_bas {
   body main .home_selection .content {
     margin-top: 7rem;
     height: auto;
+    overflow: visible;
   }
   body main .home_selection .content .left {
     width: 100%;
