@@ -1753,6 +1753,15 @@ body {
             .section1 {
                 overflow: visible;
                 .inner {
+                    &.hidden {
+                        opacity: 1;
+                        transform: translateX(0);
+                        transition: 800ms ease;
+                    }
+                    &.anim_inner_section {
+                        opacity: 1;
+                        transform: translate(0);
+                    }
                     .haut {
                         text-align: center;
                         //gap: 2rem;
