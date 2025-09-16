@@ -86,6 +86,12 @@ body header .navbar .close {
   display: none;
 }
 @media screen and (max-width: 1080px) {
+  body header .navbar .logo {
+    width: 20%;
+  }
+  body header .navbar .logo img {
+    width: 100%;
+  }
   body header .navbar .navList {
     display: block;
     position: fixed;
@@ -1344,6 +1350,7 @@ body footer .fot_bas {
   body main .section5 .inner_section5 {
     flex-direction: column;
     text-align: center;
+    overflow: visible;
   }
   body main .section5 .inner_section5 .textes {
     width: 100%;
