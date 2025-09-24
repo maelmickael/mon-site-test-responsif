@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap");
+*::before,
+*::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  /*font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;*/
+}
+
+body main .first_container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #3058a8, rgba(30, 63, 129, 0.2588235294));
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+}
+body main .first_container .inner_container {
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+  margin: auto auto;
+  padding-top: 8rem;
+  overflow: hidden;
+}
+body main .first_container .inner_container .text {
+  margin: auto auto;
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+body main .first_container .inner_container .text h1 {
+  font-size: 3rem;
+}
+body main .first_container .inner_container .text p {
+  font-size: 1.5rem;
+}
+body main .first_container .inner_container .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+body main .first_container .inner_container .btn a {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(42, 42, 42);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  transition: 300ms ease;
+}
+body main .first_container .inner_container .btn a:hover {
+  transform: scale(0.9);
+}
+body main .first_container .inner_container .btn a span {
+  font-size: 2rem;
+}
+body main .first_container .inner_container .btn a .ios p {
+  font-size: 1rem;
+}
+body main .first_container .inner_container .btn a .ios p:first-child {
+  font-size: 0.6rem;
+}
+body main .first_container .inner_container .phone_wrapper {
+  margin: auto auto;
+  width: 25%;
+  padding-top: 2rem;
+  height: auto;
+}
+body main .first_container .inner_container .phone_wrapper img {
+  width: 100%;
+  height: 100%;
+}
+body main .second_container {
+  width: 100%;
+}
+body main .second_container .inner_second {
+  width: 100%;
+  padding: 0 10%;
+  margin-top: 5rem;
+}
+body main .second_container .inner_second .bloc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+body main .second_container .inner_second .bloc .info {
+  width: 100%;
+}
+body main .second_container .inner_second .bloc .info span {
+  background-image: linear-gradient(to bottom, #3a62b3, #0d2c6a);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+}
+body main .second_container .inner_second .bloc .info h1 {
+  padding-top: 1rem;
+  font-size: 3.1rem;
+  line-height: 3.1rem;
+  text-transform: uppercase;
+}
+body main .second_container .inner_second .bloc .info p {
+  font-size: 1.8rem;
+  padding-top: 1rem;
+}
+body main .second_container .inner_second .bloc .cadre {
+  width: 100%;
+}
+body main .second_container .inner_second .bloc .cadre .banque {
+  width: 100%;
+  margin: auto auto;
+  padding: 1rem;
+  background-image: linear-gradient(to bottom, rgba(48, 88, 168, 0.1647058824), rgba(48, 88, 168, 0.537254902));
+}
+body main .second_container .inner_second .bloc .cadre .banque img {
+  width: 100%;
+}
+body main .contact_section {
+  width: 100%;
+  height: 100vh;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+body main .contact_section .inner_contact_section {
+  padding: 8rem 10%;
+  width: 80%;
+  margin: auto auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.295);
+  border-radius: 1rem;
+}
+body main .contact_section .inner_contact_section .contact_info {
+  width: 100%;
+}
+body main .contact_section .inner_contact_section .contact_info h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+body main .contact_section .inner_contact_section .contact_info .bloc {
+  margin-top: 1rem;
+}
+body main .contact_section .inner_contact_section .contact_info .bloc .perso_info {
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+body main .contact_section .inner_contact_section .contact_info .bloc .perso_info span {
+  color: #3058a8;
+  font-size: 1.6rem;
+}
+body main .contact_section .inner_contact_section .contact_info .bloc .perso_info .mail_info {
+  line-height: 1;
+  margin-left: 0.3rem;
+}
+body main .contact_section .inner_contact_section .contact_info .bloc .perso_info .mail_info span {
+  color: black;
+  font-size: 0.9rem;
+}
+body main .contact_section .inner_contact_section .contact_info .bloc .perso_info .mail_info p {
+  font-size: 0.9rem;
+  color: black;
+}
+body main .contact_section .inner_contact_section .contact_form {
+  width: 80%;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.421);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+}
+body main .contact_section .inner_contact_section .contact_form form .input {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+body main .contact_section .inner_contact_section .contact_form form .input input {
+  outline: none;
+  border: none;
+  background-color: rgba(58, 98, 179, 0.1098039216);
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+}
+body main .contact_section .inner_contact_section .contact_form form .input textarea {
+  outline: none;
+  border: none;
+  background-color: rgba(58, 98, 179, 0.1098039216);
+  padding: 0.8rem 1rem;
+}
+body main .contact_section .inner_contact_section .contact_form form .btn {
+  margin-top: 0.5rem;
+}
+body main .contact_section .inner_contact_section .contact_form form .btn button {
+  outline: none;
+  border: none;
+  background-color: #3058a8;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+}
+body main .contact_section .inner_contact_section .contact_form form .btn button span {
+  color: white;
+  padding: 0.5rem;
+  border-radius: 100%;
+}/*# sourceMappingURL=products.css.map */

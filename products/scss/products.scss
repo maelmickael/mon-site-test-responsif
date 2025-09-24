@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap');
+*::before,
+*::after,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /*font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;*/
+}
+
+body {
+    main {
+        .first_container {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, #3058a8, #1e3f8142);
+            //border: 1px solid black;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+            .inner_container {
+                width: 100%;
+                height: 100%;
+                padding: 0 10%;
+                margin: auto auto;
+                padding-top: 8rem;
+                //border: 5px solid green;
+                overflow: hidden;
+                .text {
+                    margin: auto auto;
+                    //border: 1px solid red;
+                    width: 50%;
+                    text-align: center;
+                    color: white;
+                    h1 {
+                        font-size: 3rem;
+                    }
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+                .btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.5rem;
+                    a {
+                        margin-top: 1.2rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.6rem;
+                        text-decoration: none;
+                        color: white;
+                        background-color: rgb(42, 42, 42);
+                        border-radius: 0.5rem;
+                        padding: 0.5rem 1.2rem;
+                        transition: 300ms ease;
+                        &:hover {
+                            transform: scale(0.9);
+                        }
+                        span {
+                            font-size: 2rem;
+                        }
+                        .ios {
+                            p {
+                                font-size: 1rem;
+                            }
+                            p:first-child {
+                                font-size: 0.6rem;
+                            }
+                        }
+                    }
+                }
+                .phone_wrapper {
+                    //border: 1px solid blue;
+                    margin: auto auto;
+                    width: 25%;
+                    padding-top: 2rem;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        //z-index: 10000;
+                    }
+                }
+            }
+        }
+        .second_container {
+            width: 100%;
+            .inner_second {
+                width: 100%;
+                padding: 0 10%;
+                margin-top: 5rem;
+                //border: 2px solid red;
+                .bloc {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+                    margin-top: 5rem;
+                    //border: 1px solid blue;
+                    .info {
+                        width: 100%;
+                        //border: 1px solid red;
+                        span {
+                            background-image: linear-gradient(to bottom, #3a62b3, #0d2c6a);
+                            color: white;
+                            padding: 0.8rem;
+                            border-radius: 0.3rem;
+                            font-size: 1.5rem;
+                        }
+                        h1 {
+                            padding-top: 1rem;
+                            font-size: 3.1rem;
+                            line-height: 3.1rem;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            font-size: 1.8rem;
+                            padding-top: 1rem;
+                        }
+                    }
+                    .cadre {
+                        width: 100%;
+                        //border: 1px solid green;
+                        .banque {
+                            //border: 1px solid orange;
+                            width: 100%;
+                            margin: auto auto;
+                            padding: 1rem;
+                            background-image: linear-gradient(to bottom, #3058a82a, #3058a889);
+                            //background-color: #3058a82a;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact_section {
+            width: 100%;
+            height: 100vh;
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            //border: 1px solid orangered;
+            .inner_contact_section {
+                padding: 8rem 10%;
+                width: 80%;
+                margin: auto auto;
+                //border: 1px solid rgb(255, 0, 247);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: white;
+                box-shadow: 0 0 20px rgba(128, 128, 128, 0.295);
+                border-radius: 1rem;
+                .contact_info {
+                    width: 100%;
+                    //border: 1px solid blue;
+                    h1 {
+                        //width: 40%;
+                        //border: 1px solid red;
+                        font-size: 2.5rem;
+                        line-height: 2.5rem;
+                    }
+                    .bloc {
+                        margin-top: 1rem;
+                        .perso_info {
+                            margin-top: 0.7rem;
+                            display: flex;
+                            align-items: center;
+                            span {
+                                color: #3058a8;
+                                font-size: 1.6rem;
+                            }
+                            .mail_info {
+                                line-height: 1;
+                                margin-left: 0.3rem;
+                                span {
+                                    color: black;
+                                    font-size: 0.9rem;
+                                }
+                                p {
+                                    font-size: 0.9rem;
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+                .contact_form {
+                    width: 80%;
+                    box-shadow: 0 0 20px rgba(128, 128, 128, 0.421);
+                    border-radius: 1rem;
+                    padding: 1.5rem 2rem;
+                    //border: 1px solid green;
+                    form {
+                        .input {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 0.5rem 0;
+                            input {
+                                outline: none;
+                                border: none;
+                                background-color: #3a62b31c;
+                                padding: 0.8rem 1rem;
+                                border-radius: 0.5rem;
+                            }
+                            textarea {
+                                outline: none;
+                                border: none;
+                                background-color: #3a62b31c;
+                                padding: 0.8rem 1rem;
+                            }
+                        }
+                        .btn {
+                            margin-top: 0.5rem;
+                            button {
+                                outline: none;
+                                border: none;
+                                background-color: #3058a8;
+                                color: white;
+                                //color: white;
+                                padding: 0.8rem 1.2rem;
+                                border-radius: 0.5rem;
+                                span {
+                                    //background-color: white;
+                                    color: white;
+                                    padding: 0.5rem;
+                                    border-radius: 100%;
+                                    //margin-right: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

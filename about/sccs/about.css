@@ -1,0 +1,692 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap");
+*::before,
+*::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  /*font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;*/
+}
+
+body {
+  width: 100%;
+}
+body main .first-bloc {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(48, 88, 168, 0.8509803922), rgba(48, 88, 168, 0.168627451));
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+}
+body main .first-bloc .content-first-bloc {
+  width: 100%;
+  height: 100vh;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*.marque {
+      width: 100%;
+      background-color: #03a1c8;
+      box-shadow: 0 0 30px #03a1c8;
+      position: absolute;
+  }*/
+}
+body main .first-bloc .content-first-bloc .testimonial {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+body main .first-bloc .content-first-bloc .testimonial .img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+body main .first-bloc .content-first-bloc .testimonial .img img {
+  padding: 0.18rem;
+  width: 100%;
+  border-radius: 50%;
+}
+body main .first-bloc .content-first-bloc .testimonial .testims {
+  margin-left: 0.5rem;
+}
+body main .first-bloc .content-first-bloc .testimonial .testims p {
+  font-size: 0.8rem;
+}
+body main .first-bloc .content-first-bloc .text {
+  margin-top: 1rem;
+  text-align: center;
+}
+body main .first-bloc .content-first-bloc .btn {
+  margin-top: 2rem;
+}
+body main .first-bloc .content-first-bloc .btn .app {
+  background-color: white;
+  color: rgba(48, 88, 168, 0.8509803922);
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+body main .first-bloc .content-first-bloc .btn .app:hover {
+  background-color: rgba(48, 88, 168, 0.8509803922);
+  color: white;
+  transition: 500ms ease-out;
+}
+body main .first-bloc .content-first-bloc .btn .pricing {
+  margin-left: 1vw;
+  background-color: rgba(48, 88, 168, 0.8509803922);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+body main .first-bloc .content-first-bloc .btn .pricing:hover {
+  background-color: white;
+  color: rgba(48, 88, 168, 0.8509803922);
+  transition: 500ms ease-out;
+}
+body main .first-bloc .content-first-bloc .phone-bank {
+  margin-top: 2rem;
+  width: 50%;
+}
+body main .first-bloc .content-first-bloc .phone-bank img {
+  width: 100%;
+  height: 100%;
+}
+body main .second-bloc {
+  width: 80%;
+  margin: 10rem auto;
+}
+body main .second-bloc .contain-second {
+  width: 100%;
+}
+body main .second-bloc .contain-second .btn-about {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.412);
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+}
+body main .second-bloc .contain-second .btn-about span {
+  color: rgba(48, 88, 168, 0.8509803922);
+  font-size: 0.8rem;
+}
+body main .second-bloc .contain-second .btn-about .about {
+  text-align: center;
+  color: gray;
+  padding: 0 0.5rem;
+}
+body main .second-bloc .contain-second .intro {
+  margin-top: 2rem;
+}
+body main .second-bloc .contain-second .intro .titre {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+body main .second-bloc .contain-second .intro .titre .bloc h1 {
+  font-size: 2.3rem;
+}
+body main .second-bloc .contain-second .intro .titre .bloc h1 span {
+  color: rgba(48, 88, 168, 0.8509803922);
+}
+body main .second-bloc .contain-second .intro .info-flottant {
+  padding-top: 3rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 2rem;
+}
+body main .second-bloc .contain-second .intro .info-flottant .box {
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.416);
+  padding: 1rem;
+}
+body main .second-bloc .contain-second .intro .info-flottant .box .icon {
+  text-align: center;
+  background-color: rgba(48, 88, 168, 0.8509803922);
+  color: white;
+  padding: 2vw;
+  border-radius: 100%;
+  font-size: 1.5rem;
+}
+body main .second-bloc .contain-second .intro .info-flottant .box .info {
+  padding-left: 1rem;
+}
+body main .second-bloc .contain-second .intro .info-flottant .box .info h1 {
+  font-size: 1.3rem;
+}
+body main .second-bloc .contain-second .composit-img {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+body main .second-bloc .contain-second .composit-img .img {
+  width: 100%;
+}
+body main .second-bloc .contain-second .composit-img .img img {
+  width: 100%;
+  border-radius: 2rem;
+}
+body main .second-bloc .contain-second .composit-img .video {
+  width: 100%;
+  margin-left: -10rem;
+}
+body main .second-bloc .contain-second .composit-img .video video {
+  width: 100%;
+  border: 1rem solid #ffffff;
+  border-radius: 2rem;
+  cursor: none;
+}
+body main .third-bloc {
+  width: 100%;
+  background-color: rgba(48, 88, 168, 0.0549019608);
+}
+body main .third-bloc .contain-third {
+  padding: 5rem 10%;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .third-bloc .contain-third .btn-about {
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.31);
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+}
+body main .third-bloc .contain-third .btn-about span {
+  color: rgba(48, 88, 168, 0.8509803922);
+  font-size: 0.8rem;
+}
+body main .third-bloc .contain-third .btn-about .about {
+  color: gray;
+  padding: 0 0.5rem;
+}
+body main .third-bloc .contain-third .titre {
+  margin-top: 2rem;
+}
+body main .third-bloc .contain-third .titre span {
+  color: rgba(48, 88, 168, 0.8509803922);
+}
+body main .third-bloc .contain-third .paraghs {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+body main .third-bloc .contain-third .teams {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+body main .third-bloc .contain-third .teams .swiper-button-next,
+body main .third-bloc .contain-third .teams .swiper-button-prev {
+  display: none;
+}
+body main .third-bloc .contain-third .teams .inner .box {
+  background-color: white;
+  border-radius: 1rem;
+  height: 100%;
+}
+body main .third-bloc .contain-third .teams .inner .box .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body main .third-bloc .contain-third .teams .inner .box .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .third-bloc .contain-third .teams .inner .box .img .desc {
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(48, 88, 168, 0.3490196078);
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  transition: 200ms ease-in;
+  padding: 1rem;
+  height: 0%;
+}
+body main .third-bloc .contain-third .teams .inner .box .img .desc h5 {
+  font-size: 1.5rem;
+}
+body main .third-bloc .contain-third .teams .inner .box .img .desc p {
+  color: #ffffff;
+}
+body main .third-bloc .contain-third .teams .inner .box .img:hover .desc {
+  opacity: 1;
+  transform: translateY(0);
+  border-radius: 1rem;
+  height: 100%;
+}
+body main .third-bloc .contain-third .teams .inner .box .img:hover .desc h5 {
+  opacity: 1;
+}
+body main .third-bloc .contain-third .teams .inner .box .img .media {
+  margin-top: 0.7rem;
+}
+body main .third-bloc .contain-third .teams .inner .box .img .media span {
+  border: 1px solid #3259a6;
+  border-radius: 100%;
+  padding: 0.3rem;
+  color: #3259a6;
+}
+
+@media screen and (max-width: 1440px) {
+  body main .second-bloc .contain-second .intro .titre .bloc h1 {
+    font-size: 2.2rem;
+  }
+  body main .second-bloc .contain-second .intro .titre .bloc p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body main .first-bloc .content-first-bloc .phone-bank {
+    margin-top: 2rem;
+    width: 50%;
+  }
+  body main .first-bloc .content-first-bloc .phone-bank img {
+    width: 100%;
+    height: 100%;
+  }
+  body main .second-bloc .contain-second .intro .titre .bloc h1 {
+    font-size: 1.5rem;
+  }
+  body main .second-bloc .contain-second .intro .titre .bloc p {
+    font-size: 0.6rem;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant .box .icon {
+    padding: 1vw;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant .box .info h1 {
+    font-size: 0.9rem;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant .box .info p {
+    font-size: 0.8rem;
+  }
+  body main .third-bloc .contain-third .paraghs p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  body main .first-bloc .content-first-bloc .phone-bank {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  body main .first-bloc .content-first-bloc .phone-bank img {
+    width: 100%;
+    height: 100%;
+  }
+  body main .second-bloc .contain-second .intro .titre {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body main .second-bloc .contain-second .intro .titre .bloc.bloc-titre {
+    grid-column: 1/3;
+    text-align: center;
+  }
+  body main .second-bloc .contain-second .intro .titre .bloc.bloc-titre h1 {
+    font-size: 2.5rem;
+  }
+  body main .second-bloc .contain-second .intro .titre .bloc p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body main .second-bloc .contain-second .intro .info-flottant .box .icon {
+    padding: 2vw;
+    font-size: 1.2rem;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant .box .info {
+    padding-left: 0.5rem;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant .box .info h1 {
+    font-size: 1.1rem;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant .box .info p {
+    font-size: 0.85rem;
+  }
+  body main .third-bloc .contain-third .titre h1 {
+    font-size: 2rem;
+  }
+  body main .third-bloc .contain-third .paraghs p {
+    font-size: 1.2rem;
+  }
+}
+/*@media screen and (max-width: 425px) {
+    body {
+        main {
+            .first-bloc {
+                //border: 1px solid red;
+                width: 100%;
+                height: 100%;
+                .content-first-bloc {
+                    width: 100%;
+                    height: 100%;
+                    .text {
+                        h1 {
+                            font-size: 1.7rem;
+                        }
+                    }
+                    .btn {
+                        //display: flex;
+                        //flex-direction: column;
+                    }
+                    .phone-bank {
+                        //border: 1px solid blue;
+                        //flex: 1 1 auto;
+                        //height: 100%;
+                        margin-top: 2rem;
+                        width: 50%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .second-bloc {
+                .contain-second {
+                    .intro {
+                        .titre {
+                            width: 100%;
+                            //border: 1px solid red;
+                            .bloc {
+                                h1 {
+                                    font-size: 1.18rem;
+                                }
+                                p {
+                                    font-size: 0.5rem;
+                                }
+                            }
+                        }
+                        .info-flottant {
+                            .box {
+                                .icon {
+                                    padding: 1vw;
+                                }
+                                .info {
+                                    h1 {
+                                        font-size: 0.5rem;
+                                    }
+                                    p {
+                                        font-size: 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .third-bloc {
+                .contain-third {
+                    .paraghs {
+                        .titre {
+                            h1 {
+                                font-size: 0.6rem;
+                            }
+                        }
+                        p {
+                            font-size: 0.69rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
+/*@media screen and (max-width: 375px) {
+    body {
+        main {
+            .first-bloc {
+                //border: 1px solid red;
+                .content-first-bloc {
+                    overflow: hidden;
+                    padding-top: 6rem;
+                    .testimonial {
+                        .testims {
+                            p {
+                                font: 0.2rem;
+                            }
+                        }
+                    }
+                    .text {
+                        h1 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .btn {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5rem;
+                        a {
+                            font-size: 0.8rem;
+                            text-align: center;
+                        }
+                    }
+                    .phone-bank {
+                        //border: 1px solid blue;
+                        //flex: 1 1 auto;
+                        //height: 100%;
+                        margin-top: 2rem;
+                        width: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .second-bloc {
+                margin: 5rem auto;
+                .contain-second {
+                    .btn-about {}
+                    .intro {
+                        .titre {
+                            flex-direction: column;
+                            gap: 0.5rem;
+                            width: 100%;
+                            //border: 1px solid red;
+                            .bloc {
+                                width: 100%;
+                                text-align: center;
+                                h1 {
+                                    font-size: 1.6rem;
+                                }
+                                p {
+                                    font-size: 0.6rem;
+                                }
+                            }
+                        }
+                        .info-flottant {
+                            //width: 100%;
+                            flex-direction: column;
+                            .box {
+                                .icon {
+                                    padding: 5vw;
+                                    font-size: 1.4rem;
+                                }
+                                .info {
+                                    padding-left: 1rem;
+                                    h1 {
+                                        font-size: 0.9rem;
+                                    }
+                                    p {
+                                        font-size: 0.7rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .composit-img {
+                        margin-top: 5rem;
+                        flex-direction: column;
+                        align-items: center;
+                        .img {
+                            width: 100%;
+                            img {
+                                width: 100%;
+                                border-radius: 1rem;
+                            }
+                        }
+                        .video {
+                            width: 85%;
+                            margin-left: 0;
+                            margin-top: -2rem;
+                            border-radius: 1rem;
+                            video {
+                                width: 100%;
+                                border: none;
+                                cursor: none;
+                                border-radius: 1rem;
+                                border: 0.5rem solid white;
+                            }
+                        }
+                    }
+                }
+            }
+            .third-bloc {
+                .contain-third {
+                    .paraghs {
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                    .titre {
+                        h1 {
+                            font-size: 1.8rem;
+                        }
+                    }
+                    .teams {
+                        grid-template-columns: auto;
+                    }
+                }
+            }
+        }
+    }
+}*/
+@media screen and (max-width: 425px) {
+  body main .first-bloc .content-first-bloc {
+    overflow: hidden;
+    padding-top: 6rem;
+  }
+  body main .first-bloc .content-first-bloc .testimonial .testims p {
+    font: 0.2rem;
+  }
+  body main .first-bloc .content-first-bloc .text h1 {
+    font-size: 1.5rem;
+  }
+  body main .first-bloc .content-first-bloc .btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  body main .first-bloc .content-first-bloc .btn a {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  body main .first-bloc .content-first-bloc .phone-bank {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  body main .first-bloc .content-first-bloc .phone-bank img {
+    width: 100%;
+    height: 100%;
+  }
+  body main .second-bloc {
+    margin: 5rem auto;
+  }
+  body main .second-bloc .contain-second .intro .titre {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  body main .second-bloc .contain-second .intro .titre .bloc {
+    width: 100%;
+    text-align: center;
+  }
+  body main .second-bloc .contain-second .intro .titre .bloc h1 {
+    font-size: 1.6rem;
+  }
+  body main .second-bloc .contain-second .intro .titre .bloc p {
+    font-size: 0.6rem;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant {
+    flex-direction: column;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant .box .icon {
+    padding: 5vw;
+    font-size: 1.4rem;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant .box .info {
+    padding-left: 1rem;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant .box .info h1 {
+    font-size: 0.9rem;
+  }
+  body main .second-bloc .contain-second .intro .info-flottant .box .info p {
+    font-size: 0.7rem;
+  }
+  body main .second-bloc .contain-second .composit-img {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .second-bloc .contain-second .composit-img .img {
+    width: 100%;
+  }
+  body main .second-bloc .contain-second .composit-img .img img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  body main .second-bloc .contain-second .composit-img .video {
+    width: 85%;
+    margin-left: 0;
+    margin-top: -2rem;
+    border-radius: 1rem;
+  }
+  body main .second-bloc .contain-second .composit-img .video video {
+    width: 100%;
+    border: none;
+    cursor: none;
+    border-radius: 1rem;
+    border: 0.5rem solid white;
+  }
+  body main .third-bloc .contain-third .paraghs p {
+    font-size: 1rem;
+  }
+  body main .third-bloc .contain-third .titre h1 {
+    font-size: 1.8rem;
+  }
+  body main .third-bloc .contain-third .teams {
+    grid-template-columns: auto;
+  }
+}/*# sourceMappingURL=about.css.map */

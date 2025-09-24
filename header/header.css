@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap");
+*::before,
+*::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  /*font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;*/
+}
+
+body header {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(128, 128, 128, 0.307);
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+body header .navbar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto auto;
+  padding: 0.3rem;
+}
+body header .navbar .logo {
+  width: 20%;
+}
+body header .navbar .logo img {
+  width: 60%;
+}
+body header .navbar .navList {
+  width: 60%;
+  list-style-type: none;
+  display: flex;
+}
+body header .navbar .navList li {
+  margin: 0.8rem;
+}
+body header .navbar .navList li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: gray;
+  padding: 0.5em;
+}
+body header .navbar .navList li a:hover {
+  color: #3259a6;
+  padding: 0.5em;
+  transition: ease-in-out 500px;
+}
+body header .navbar .navList li a:focus {
+  color: #3259a6;
+  border-radius: 1rem;
+}
+body header .navbar .btn {
+  width: 20%;
+}
+body header .navbar .btn form button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  padding: 8px 15px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+body header .navbar .btn form .login {
+  border: 1px solid #3259a6;
+  color: #3259a6;
+  margin: 0 5px;
+}
+body header .navbar .btn form .signup {
+  background-color: #3259a6;
+  color: white;
+}
+body header .navbar .burger {
+  display: none;
+}
+body header .navbar .close {
+  display: none;
+}
+@media screen and (max-width: 1080px) {
+  body header .navbar .navList {
+    display: block;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.247);
+    transition: left 200ms ease-in-out;
+  }
+  body header .navbar .navList.showMenu {
+    left: 0;
+  }
+  body header .navbar .navList.showMenu::before {
+    background-color: blue;
+  }
+  body header .navbar .navList li {
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 10px 0;
+  }
+  body header .navbar .btn {
+    display: none;
+  }
+  body header .navbar .burger {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  body header .navbar .close {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=header.css.map */

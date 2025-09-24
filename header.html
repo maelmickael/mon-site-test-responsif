@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header/header.css">
+    <title>HOME</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <img src="assets/logo/logo.png" alt="logo">
+            </div>
+
+            <!-- Nav List-->
+            <ul class="navList" id="navList">
+                <!-- Close Btn-->
+                <div class="close" id="close" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <!-- NavLink-->
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+
+            <!-- Login Btn-->
+            <div class="btn">
+                <form>
+                    <button type="button" class="login">Login</button>
+                    <button type="button" class="signup">SignUp</button>
+                </form>
+            </div>
+
+            <!-- Burger -->
+            <div class="burger" id="burger" onclick="openMenu()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </nav>
+    </header>
+    <script src="header/header.js"></script>
+</body>
+
+</html>

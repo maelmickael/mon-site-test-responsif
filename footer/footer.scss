@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap');
+*::before,
+*::after,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /*font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;*/
+}
+
+footer {
+    width: 80%;
+    margin: auto auto;
+    //margin-top: 26vw;
+    overflow: hidden;
+    &.hidden {
+        opacity: 0;
+        transform: translateX(500px);
+        transition: 800ms ease;
+    }
+    &.anim_inner_section {
+        opacity: 1;
+        transform: translate(0);
+    }
+    .fot_haut {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.5vw 2.5vw 5vw 2.5vw;
+        overflow: hidden;
+        .logo {
+            width: 10%;
+            img {
+                width: 100%;
+            }
+        }
+        .deroulant {
+            ul {
+                list-style-type: none;
+            }
+            .first_ul {
+                display: flex;
+                overflow: hidden;
+                .first_li {
+                    padding: 0 2vw;
+                    a {
+                        text-decoration: none;
+                        color: gray;
+                        &:hover {
+                            color: #3259a6;
+                        }
+                    }
+                    ul {
+                        margin-top: 1vw;
+                    }
+                }
+            }
+        }
+        .media {
+            span {
+                font-size: 0.8rem;
+            }
+            .social {
+                margin-top: 1vw;
+                a {
+                    color: #3259a6;
+                    &:hover {
+                        color: #03a1c8;
+                    }
+                }
+            }
+        }
+    }
+    .fot_bas {
+        text-align: center;
+        padding: 1vw;
+        color: gray;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    footer {
+        overflow: visible;
+        margin-top: 2rem;
+        //width: 100%;
+        .fot_haut {
+            overflow: visible;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .logo {
+                width: 50%;
+                img {
+                    width: 100%;
+                }
+            }
+            .deroulant {
+                font-size: 0.8rem;
+                margin-top: 1rem;
+            }
+            .media {
+                margin-top: 1rem;
+            }
+        }
+        .fot_bas {
+            text-align: center;
+            padding: 1rem;
+            color: gray;
+            font-size: 0.8rem;
+        }
+    }
+}

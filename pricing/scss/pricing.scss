@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap');
+*::before,
+*::after,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /*font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;*/
+}
+
+.pricing_section {
+    //border: 3px solid red;
+    width: 100%;
+    min-height: 100vh;
+    //margin: auto auto;
+    .inner_pricing_section {
+        width: 80%;
+        //border: 3px solid green;
+        padding-top: 8rem;
+        text-align: center;
+        //padding: 0 10%;
+        margin: auto auto;
+        .btn {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 0 1rem rgba(128, 128, 128, 0.338);
+            border-radius: 0.5rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            line-height: 2.5rem;
+            margin-top: 1rem;
+        }
+        p {
+            font-size: 1rem;
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+        .pricing_bloc {
+            //width: 100%;
+            margin: 2rem auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            text-align: left;
+            .blocs {
+                //border: 2px solid red;
+                position: relative;
+                box-shadow: 0 0 1rem rgba(128, 128, 128, 0.208);
+                border-radius: 1rem;
+                padding: 2rem;
+                &.bleu {
+                    .pricing_list {
+                        .list {
+                            span:first-child {
+                                color: blue;
+                            }
+                        }
+                    }
+                }
+                .awesome {
+                    background-color: black;
+                    color: white;
+                    padding: 0.5rem;
+                    border-radius: 0.3rem;
+                }
+                h4 {
+                    margin-top: 0.7rem;
+                    margin-bottom: 0.2rem;
+                }
+                .ppp {
+                    font-size: 0.85rem;
+                }
+                h1 {
+                    sup {
+                        font-weight: 400;
+                        font-size: 0.7rem;
+                    }
+                }
+                .get_started {
+                    margin-top: 0.5rem;
+                    width: 100%;
+                    background-color: black;
+                    box-shadow: 0 0 1rem rgba(15, 15, 15, 0.46);
+                    text-align: center;
+                    padding: 0.5rem;
+                    border-radius: 0.5rem;
+                    a {
+                        width: 100%;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                .pricing_list {
+                    margin-top: 0.5rem;
+                    .list {
+                        padding: 0.15rem 0;
+                    }
+                }
+                .sale {
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    background-color: blue;
+                    box-shadow: 0 0 0.5rem blue;
+                    color: white;
+                    padding: 0.2rem 0.5rem;
+                    border-radius: 0.3rem;
+                    rotate: 20deg;
+                }
+            }
+        }
+    }
+}
+
+.faq_section {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 5rem;
+    margin-bottom: -5rem;
+    .inner_faq_section {
+        width: 80%;
+        margin: auto auto;
+        .faq_btn {
+            text-align: center;
+            span {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+                box-shadow: 0 0 1rem rgba(128, 128, 128, 0.338);
+                border-radius: 0.5rem;
+            }
+        }
+        .faq {
+            width: 60%;
+            margin: auto auto;
+            //border: 1px solid red;
+            padding-top: 2rem;
+            details {
+                width: 100%;
+                padding: 1.5rem;
+                box-shadow: 1px 0 15px rgba(128, 128, 128, 0.386);
+                border-radius: 1rem;
+                //border: 1px solid green;
+                margin: 1.5rem 0;
+                transition: 300ms ease-in;
+                summary {
+                    list-style: none;
+                    cursor: pointer;
+                    transition: 300ms ease-in;
+                    position: relative;
+                    &::before {
+                        content: "o";
+                        font-weight: bolder;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+                p {
+                    margin-top: 1rem;
+                    transition: 300ms ease-in;
+                    animation: animDown 300ms;
+                }
+            }
+        }
+    }
+}
+
+@keyframes animDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

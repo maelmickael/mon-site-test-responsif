@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap");
+*::before,
+*::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  /*font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;*/
+}
+
+.pricing_section {
+  width: 100%;
+  min-height: 100vh;
+}
+.pricing_section .inner_pricing_section {
+  width: 80%;
+  padding-top: 8rem;
+  text-align: center;
+  margin: auto auto;
+}
+.pricing_section .inner_pricing_section .btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 1rem rgba(128, 128, 128, 0.338);
+  border-radius: 0.5rem;
+}
+.pricing_section .inner_pricing_section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+}
+.pricing_section .inner_pricing_section p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.pricing_section .inner_pricing_section .pricing_bloc {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  text-align: left;
+}
+.pricing_section .inner_pricing_section .pricing_bloc .blocs {
+  position: relative;
+  box-shadow: 0 0 1rem rgba(128, 128, 128, 0.208);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.pricing_section .inner_pricing_section .pricing_bloc .blocs.bleu .pricing_list .list span:first-child {
+  color: blue;
+}
+.pricing_section .inner_pricing_section .pricing_bloc .blocs .awesome {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+.pricing_section .inner_pricing_section .pricing_bloc .blocs h4 {
+  margin-top: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+.pricing_section .inner_pricing_section .pricing_bloc .blocs .ppp {
+  font-size: 0.85rem;
+}
+.pricing_section .inner_pricing_section .pricing_bloc .blocs h1 sup {
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+.pricing_section .inner_pricing_section .pricing_bloc .blocs .get_started {
+  margin-top: 0.5rem;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0 0 1rem rgba(15, 15, 15, 0.46);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.pricing_section .inner_pricing_section .pricing_bloc .blocs .get_started a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+.pricing_section .inner_pricing_section .pricing_bloc .blocs .pricing_list {
+  margin-top: 0.5rem;
+}
+.pricing_section .inner_pricing_section .pricing_bloc .blocs .pricing_list .list {
+  padding: 0.15rem 0;
+}
+.pricing_section .inner_pricing_section .pricing_bloc .blocs .sale {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: blue;
+  box-shadow: 0 0 0.5rem blue;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  rotate: 20deg;
+}
+
+.faq_section {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 5rem;
+  margin-bottom: -5rem;
+}
+.faq_section .inner_faq_section {
+  width: 80%;
+  margin: auto auto;
+}
+.faq_section .inner_faq_section .faq_btn {
+  text-align: center;
+}
+.faq_section .inner_faq_section .faq_btn span {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 1rem rgba(128, 128, 128, 0.338);
+  border-radius: 0.5rem;
+}
+.faq_section .inner_faq_section .faq {
+  width: 60%;
+  margin: auto auto;
+  padding-top: 2rem;
+}
+.faq_section .inner_faq_section .faq details {
+  width: 100%;
+  padding: 1.5rem;
+  box-shadow: 1px 0 15px rgba(128, 128, 128, 0.386);
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+  transition: 300ms ease-in;
+}
+.faq_section .inner_faq_section .faq details summary {
+  list-style: none;
+  cursor: pointer;
+  transition: 300ms ease-in;
+  position: relative;
+}
+.faq_section .inner_faq_section .faq details summary::before {
+  content: "o";
+  font-weight: bolder;
+  position: absolute;
+  right: 0;
+}
+.faq_section .inner_faq_section .faq details p {
+  margin-top: 1rem;
+  transition: 300ms ease-in;
+  animation: animDown 300ms;
+}
+
+@keyframes animDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=pricing.css.map */

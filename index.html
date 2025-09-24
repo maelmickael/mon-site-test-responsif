@@ -12,44 +12,13 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Style -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index/scss/styles.css">
     <title>Home</title>
 </head>
 
 <body>
-    <header id="navbar">
-        <nav class="navbar" id="navbar">
-            <div class="logo">
-                <img src="assets/logo/logo.png" alt="logo">
-            </div>
 
-            <!-- Nav List-->
-            <ul class="navList" id="navList">
-                <!-- Close Btn-->
-                <div class="close" id="close" onclick="closeMenu()">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <!-- NavLink-->
-                <li><a href="#">Acceuil</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Pricing</a></li>
-            </ul>
-
-            <!-- Login Btn-->
-            <div class="btn">
-                <form>
-                    <button type="button" class="login">Login</button>
-                    <button type="button" class="signup">SignUp</button>
-                </form>
-            </div>
-
-            <!-- Burger -->
-            <div class="burger" id="burger" onclick="openMenu()">
-                <i class="fa-solid fa-bars-staggered"></i>
-            </div>
-        </nav>
-    </header>
+    <header id="header"></header>
 
     <main>
         <section class="home_selection">
@@ -370,13 +339,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="index/js/script.js"></script>
 
     <!-- Graph Script -->
-    <script src="graph.js"></script>
+    <script src="index/js/graph.js"></script>
 
     <!-- Anim Script -->
-    <script src="anim.js"></script>
+    <script src="index/js/anim.js"></script>
+
+    <!-- Header Script -->
+    <script src="header/header.js"></script>
 </body>
 
 </html>
